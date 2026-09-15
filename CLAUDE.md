@@ -61,6 +61,11 @@ numerator is the PRs that did one of the two. A PR that silently does neither is
 capture miss and counts against the rate. **Do not backfill missed records.** The misses
 are the measurement.
 
+**Nothing reaches `main` except through a pull request** — no direct commits, no direct
+pushes, not even for a one-line fix. This is not a style rule. Work that never became a
+PR appears in neither the numerator nor the denominator, so a direct push does not merely
+bend the convention, it silently deletes evidence.
+
 What counts as a decision: anything a future contributor would ask "why is it like
 this?" about. Renaming a variable is not a decision. Choosing the schema vocabulary,
 adopting a timeout rule, accepting or rejecting a plan revision — all decisions.
